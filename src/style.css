@@ -1,0 +1,101 @@
+div.weather-app {
+  background-image: linear-gradient(
+    to top,
+    #f3e7e9 0%,
+    #e3eeff 99%,
+    #e3eeff 100%
+  );
+  color: #7182a0;
+  width: 75%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px solid #c6d2e6;
+  border-radius: 8px;
+  box-shadow: 2px 5px 5px rgb(0 0 0 / 20%);
+  font-family: "Open sans";
+}
+
+h1,
+h2,
+h3 {
+  font-family: "kaushan script", "open sans";
+  font-size: 18px;
+}
+
+p.date {
+  margin: auto o;
+  margin-top: 20px;
+}
+
+.current-weather {
+  margin: 35px 10px 10px 10px;
+}
+
+.current-weather i.fa-cloud-sun-rain {
+  font-size: 52px;
+  color: #ea97adb7;
+  background-color: #f4eeed;
+  display: inline;
+  padding: 25px;
+  border: 1px solid #7182a0;
+  border-radius: 50px;
+  position: relative;
+  right: -50px;
+}
+
+ul {
+  list-style: none;
+  font-size: 10px;
+  position: relative;
+  left: -30px;
+  top: -20px;
+}
+.temperature {
+  font-size: 25px;
+  color: #ea97adb7;
+  font-weight: 900;
+  text-decoration: none;
+}
+a,
+a:hover,
+a:active,
+a:visited {
+  font-size: 25px;
+  color: #ea97adb7;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.forecast {
+  border: 1px solid #7182a0;
+  border-radius: 6px;
+  padding: 8px;
+  font-size: 10px;
+}
+i {
+  font-size: 26px;
+  color: #ea97adb7;
+}
+
+h3 {
+  padding: 40px 0 0 0;
+}
+p {
+  font-size: 14px;
+}
+form {
+  display: inline;
+  font-size: 12px;
+}
+button {
+  display: inline;
+  font-size: 12px;
+  text-align: center;
+  color: -internal-light-dark(black, white);
+  background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+  box-sizing: border-box;
+  padding: 1px 6px;
+  border-width: 2px;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+}
