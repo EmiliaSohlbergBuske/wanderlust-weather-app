@@ -57,10 +57,8 @@ ul {
   font-weight: 900;
   text-decoration: none;
 }
-a,
-a:hover,
-a:active,
-a:visited {
+
+.units {
   font-size: 25px;
   color: #ea97adb7;
   font-weight: 900;
@@ -98,4 +96,9 @@ button {
   padding: 1px 6px;
   border-width: 2px;
   border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+}
+.footer {
+  color: #7182a0;
+  font-size: 14px;
+  text-align: center;
 }
