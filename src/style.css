@@ -1,4 +1,8 @@
-div.weather-app {
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+.weather-app {
   background-image: linear-gradient(
     to top,
     #f3e7e9 0%,
@@ -7,7 +11,6 @@ div.weather-app {
   );
   color: #7182a0;
   width: 75%;
-  max-width: 400px;
   margin: 0 auto;
   padding: 30px;
   border: 1px solid #c6d2e6;
@@ -80,6 +83,9 @@ h3 {
 }
 p {
   font-size: 14px;
+}
+p .small {
+  text-align: center;
 }
 form {
   display: inline;
