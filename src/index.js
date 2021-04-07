@@ -41,6 +41,8 @@ let now = new Date();
      document.querySelector("#windSpeed").innerHTML = response.data.wind.speed;
      document.querySelector("#main-icon").setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
     document.querySelector("#main-icon").setAttribute("alt", response.data.weather[0].main);
+
+    celciusTemperature =response.data.main.temp;
 }
 
 function searchCity (city) {
@@ -54,11 +56,6 @@ function searchCity (city) {
         let city = cityInput.value;
         searchCity(city);
       }
-     
-      let form = document.querySelector("#city-form");
-      form.addEventListener("submit", handleSubmit);
-
-searchCity ("London");
 
 function searchLocation (position) {
   let apiKey = "2aab278b1613f8cd861593e4ae3bb315";
@@ -77,7 +74,7 @@ currentLocationButton.addEventListener("click", currentLocation);
 function showCelcius(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = 13;
+  temperatureElement.innerHTML =Math.round(celciusTemperature);
 }
 let tempCelcius=document.querySelector("#temp-celcius");
 tempCelcius.addEventListener("click", showCelcius);
@@ -85,12 +82,15 @@ tempCelcius.addEventListener("click", showCelcius);
 function showFahrenheit(event) {
   event.preventDefault();
 let temperatureElement = document.querySelector("#temperature");
-let temperature =temperatureElement.innerHTML;
-temperatureElement.innerHTML = Math.round((temperature * 9)/5 +32);
+temperatureElement.innerHTML = Math.round((celciusTemperature * 9)/5 +32);
 }
-let temperatureElement = document.querySelector("#temperature");
-      let temperature =temperatureElement.innerHTML;
-      
-      let tempFahrenheit = document.querySelector("#temp-fahrenheit");
-      tempFahrenheit.addEventListener("click", showFahrenheit);
 
+let celciusTemperature = null;
+
+let form = document.querySelector("#city-form");
+      form.addEventListener("submit", handleSubmit);
+
+let tempFahrenheit = document.querySelector("#temp-fahrenheit");
+  tempFahrenheit.addEventListener("click", showFahrenheit);
+
+searchCity ("London");      

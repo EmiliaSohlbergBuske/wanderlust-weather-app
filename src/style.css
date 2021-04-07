@@ -51,15 +51,20 @@ ul {
   font-size: 25px;
   color: #ea97adb7;
   font-weight: 900;
-  text-decoration: none;
 }
-a,
-a:hover,
-a:active,
-a:visited {
+
+.units {
   font-size: 25px;
   color: #ea97adb7;
   font-weight: 900;
+  text-decoration: none;
+}
+.units .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
+
+.units .active:hover {
   text-decoration: none;
 }
 
