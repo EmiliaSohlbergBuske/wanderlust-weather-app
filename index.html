@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,101 +10,105 @@
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link
-    href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Open+Sans&family=Playfair+Display&family=Ubuntu:wght@700&display=swap"
-    rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Open+Sans&family=Playfair+Display&family=Ubuntu:wght@700&display=swap"
+        rel="stylesheet">
 
 
     <title>Wanderlust weather</title>
 </head>
+
 <body>
     <div.container>
 
-<div class="weather-app">
-<h1>Current situation in; </h1>
-<h2 id ="city-element">  </h2> 
-<p class = "date" id="date" > test for github </p>
+        <div class="weather-app">
+            <h1>Current situation in; </h1>
+            <h2 id="city-element"> </h2>
+            <p class="date" id="date"> </p>
 
-<div class="current-weather">
-<div class="row">
-    <div class="col">
-        <i class="fas fa-cloud-sun-rain"></i>
-        </div>
-            <div class="col">
-                <ul>
-                    <li>
-                        <span class = "temperature" id="temperature"> </span>
-                        <span class="units" id="units"> <a href="#" id="temp-celcius">℃</a> | <a href="#" id="temp-fahrenheit">℉</a> </span>
-                    </li>
-                    <li>
-                        <span id="description"> </span>
-                    </li>
-                    <li>
-                        Humidity: <span id="humidity"> </span>%
-                    </li>
-                    <li>
-                        Wind: <span id="windSpeed"> </span> km/h
-                    </li>
-                </ul>
+            <div class="current-weather">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="http://openweathermap.org/img/wn/04d@2x.png" alt="clear" id="main-icon"
+                            class="mainIcon">
+                    </div>
+                    <div class="col-6">
+                        <ul>
+                            <li>
+                                <span class="temperature" id="temperature"> </span>
+                                <span class="units" id="units"> <a href="#" id="temp-celcius">℃</a> | <a href="#"
+                                        id="temp-fahrenheit">℉</a> </span>
+                            </li>
+                            <li>
+                                <span id="description"> </span>
+                            </li>
+                            <li>
+                                Humidity: <span id="humidity"> </span>%
+                            </li>
+                            <li>
+                                Wind: <span id="windSpeed"> </span> km/h
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-</div>
-</div>
 
-<p>
-       ... and here's what's coming up;
-</p>
-<div class ="forecast">
-<div class="row">
-    <div class="col-2">
-        <i class="fas fa-cloud-sun-rain"></i>10℃
-        <div class="col-6">
-            Monday
-        </div>
-    </div>
-    <div class="col-2">
-            <i class="fas fa-cloud-rain"></i>8℃
-            <div class="col-6">
-                Tuesday
+            <p>
+                ... and here's what's coming up;
+            </p>
+            <div class="forecast">
+                <div class="row">
+                    <div class="col-2">
+                        <i class="fas fa-cloud-sun-rain"></i>10℃
+                        <div class="col-6">
+                            Monday
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <i class="fas fa-cloud-rain"></i>8℃
+                        <div class="col-6">
+                            Tuesday
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <i class="fas fa-cloud"></i>8℃
+                        <div class="col-6">
+                            Wednesday
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <i class="fas fa-cloud-sun"></i>11℃
+                        <div class="col-6">
+                            Thursday
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <i class="fas fa-sun"></i> 15℃
+                        <div class="col-6">
+                            Friday
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <i class="fas fa-cloud-sun"></i> 13℃
+                        <div class="col-6">
+                            Saturday
+                        </div>
+                    </div>
+                </div>
             </div>
-    </div>
-    <div class="col-2">
-        <i class="fas fa-cloud"></i>8℃
-    <div class="col-6">
-        Wednesday
-    </div>
-</div>
-    <div class="col-2">
-        <i class="fas fa-cloud-sun"></i>11℃
-        <div class="col-6">
-        Thursday
-        </div>
-    </div>
-    <div class="col-2">
-        <i class="fas fa-sun"></i> 15℃
-        <div class="col-6">
-        Friday
-        </div>
-    </div><div class="col-2">
-        <i class="fas fa-cloud-sun"></i> 13℃
-        <div class="col-6">
-            Saturday
-        </div>
-    </div>
-</div>
-</div>
 
-<h3>Not what you had in mind?</h3>
-    <p>Search & envision yourself somewhere else!</p>
-    <form id="city-form">
-        <input type="text" id = "city-input" placeholder="Dream destination..." autocomplete ="off" autofocus ="on">
-    <input type="submit" value="Take me there!"> <button id="current-location-button"> Current location</button>
-    </form>
- </div>
-
- <p class ="footer"> <a href="https://github.com/EmiliaSohlbergBuske/wanderlust-weather-app.git" class="footer" target="_blank">Open-source code</a>, by Emilia Sohlberg Buske </p>
-</div>
-    <script src="src/index.js"></script>
-    <script src="https://kit.fontawesome.com/73e9af2e5e.js" crossorigin="anonymous"></script>
+            <h3>Not what you had in mind?</h3>
+            <p>Search & envision yourself somewhere else!</p>
+            <form id="city-form">
+                <input type="text" id="city-input" placeholder="Dream destination..." autocomplete="off" autofocus="on">
+                <input type="submit" value="Take me there!"> <button id="current-location-button"> Current
+                    location</button>
+            </form>
+        </div>
+        </div>
+        <script src="src/index.js"></script>
+        <script src="https://kit.fontawesome.com/73e9af2e5e.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
