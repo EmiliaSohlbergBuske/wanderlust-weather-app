@@ -32,24 +32,20 @@ p.date {
   margin: 35px 10px 10px 10px;
 }
 
-.current-weather i.fa-cloud-sun-rain {
-  font-size: 52px;
-  color: #ea97adb7;
-  background-color: #f4eeed;
+.mainIcon {
+  width: 75%;
   display: inline;
-  padding: 25px;
+  padding: 20px;
   border: 1px solid #7182a0;
   border-radius: 50px;
   position: relative;
-  right: -50px;
+  right: -30px;
 }
 
 ul {
   list-style: none;
   font-size: 10px;
   position: relative;
-  left: -30px;
-  top: -20px;
 }
 .temperature {
   font-size: 25px;
@@ -57,8 +53,10 @@ ul {
   font-weight: 900;
   text-decoration: none;
 }
-
-.units {
+a,
+a:hover,
+a:active,
+a:visited {
   font-size: 25px;
   color: #ea97adb7;
   font-weight: 900;
@@ -70,10 +68,6 @@ ul {
   border-radius: 6px;
   padding: 8px;
   font-size: 10px;
-}
-i {
-  font-size: 26px;
-  color: #ea97adb7;
 }
 
 h3 {
@@ -96,9 +90,4 @@ button {
   padding: 1px 6px;
   border-width: 2px;
   border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-}
-.footer {
-  color: #7182a0;
-  font-size: 14px;
-  text-align: center;
 }
