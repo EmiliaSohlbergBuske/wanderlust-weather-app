@@ -69,10 +69,8 @@ forecastElement.innerHTML = forecastHTML;
 
 }
 function getForecast(coordinates) {
-  console.log(coordinates);
   let apiKey = "2aab278b1613f8cd861593e4ae3bb315";
   let apiUrl =`https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
-console.log(apiUrl);
 axios.get(apiUrl).then(displayForecast);
 }
     
@@ -113,18 +111,6 @@ function currentLocation (event) {
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
-function showCelcius(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML =Math.round(celciusTemperature);
-}
-
-
-function showFahrenheit(event) {
-  event.preventDefault();
-let temperatureElement = document.querySelector("#temperature");
-temperatureElement.innerHTML = Math.round((celciusTemperature * 9)/5 +32);
-}
 
 let celciusTemperature = null;
 
@@ -134,11 +120,6 @@ currentLocationButton.addEventListener("click", currentLocation);
 let form = document.querySelector("#city-form");
       form.addEventListener("submit", handleSubmit);
 
-let tempCelcius=document.querySelector("#temp-celcius");
-tempCelcius.addEventListener("click", showCelcius);
-
-let tempFahrenheit = document.querySelector("#temp-fahrenheit");
-  tempFahrenheit.addEventListener("click", showFahrenheit);
 
 searchCity ("London");      
 displayForecast();
