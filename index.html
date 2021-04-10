@@ -23,23 +23,18 @@
     <div class="container">
 
         <div class="weather-app">
-            <h1>Current situation in; </h1>
-            <h2 id="city-element"> </h2>
+            <h1>Current situation in <span id="city-element"> </span></h1>
             <p class="date" id="date"> </p>
 
             <div class="current-weather">
                 <div class="row">
-                    <div class="col-6">
-                        <img src="http://openweathermap.org/img/wn/04d@2x.png" alt="clear" id="main-icon"
-                            class="mainIcon">
-                    </div>
-                    <div class="col-6">
+                    <div class="col-4">
                         <ul>
                             <li>
                                 <span class="temperature" id="temperature"> </span> <span class="units">℃</span>
                             </li>
                             <li>
-                                <span id="description"> </span>
+                                <span class="description" id="description"> </span>
                             </li>
                             <li>
                                 Humidity: <span id="humidity"> </span>%
@@ -49,6 +44,10 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="col-8">
+                        <img src="http://openweathermap.org/img/wn/04d@2x.png" alt="" id="main-icon"
+                            class="mainIcon" />
+                    </div>
                 </div>
             </div>
 
@@ -57,19 +56,6 @@
             </p>
 
             <div class="weather-forecast" id="weather-forecast">
-                <div class ="row">
-                    <div class="col-2">
-                        <div class="weather-forecast-date">
-                        Sun
-                    </div>
-                        <img src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
-                        alt="" width="36"/>
-                        <div class="weather-forecast-temperatures">
-                            <span class="weather-forecast-temperatures-max"> 18°</span>
-                            <span class ="weather-forecast-temperatures-min"> 12°</span>
-                        </div>
-                    </div>
-                </div>
             </div>
 
 
@@ -81,7 +67,7 @@
                     location</button>
             </form>
             </div>
-            <p><small>Open-sourced, by <a href="https://github.com/EmiliaSohlbergBuske/wanderlust-weather-app.git" target="_blank">Emilia Sohlberg Buske</a></small></p>
+            <p class="footer"><small>Open-sourced, by <a href="https://github.com/EmiliaSohlbergBuske/wanderlust-weather-app.git" target="_blank">Emilia Sohlberg Buske</a></small></p>
         </div>
         <script src="src/index.js"></script>
         <script src="https://kit.fontawesome.com/73e9af2e5e.js" crossorigin="anonymous"></script>

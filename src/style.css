@@ -1,6 +1,5 @@
 .container {
   margin: 0 auto;
-  text-align: center;
 }
 .weather-app {
   background-image: linear-gradient(
@@ -10,7 +9,7 @@
     #e3eeff 100%
   );
   color: #7182a0;
-  width: 85%;
+  width: 75%;
   margin: 0 auto;
   padding: 30px;
   border: 1px solid #c6d2e6;
@@ -20,55 +19,55 @@
 }
 
 h1,
-h2,
-h3 {
+h3,
+.date {
   font-family: "kaushan script", "open sans";
   font-size: 18px;
 }
 
-p.date {
+.date {
   margin: auto o;
   margin-top: 20px;
 }
 
 .current-weather {
-  margin: 35px 10px 10px 10px;
+  margin: 30px 10px 30px 10px;
 }
 
 .mainIcon {
-  width: 75%;
   display: inline;
-  padding: 30px;
+  padding: 10px;
   border: 2px solid #ea97ad57;
   border-radius: 50px;
-  position: relative;
-  left: 30px;
+  max-width: 110px;
 }
 
 ul {
   list-style: none;
   font-size: 12px;
   text-align: left;
-  position: relative;
-  right: 30px;
 }
 .temperature {
-  font-size: 25px;
+  font-size: 30px;
   color: #ea97adb7;
   font-weight: 900;
 }
-
 .units {
-  font-size: 25px;
+  font-size: 30px;
   color: #ea97adb7;
   font-weight: 900;
   text-decoration: none;
+}
+.description {
+  font-size: 14px;
+  line-height: 2;
 }
 .weather-forecast {
   font-size: 12px;
   border: 2px solid #ea97ad57;
   border-radius: 8px;
   padding: 20px;
+  text-align: center;
 }
 .weather-forecast-temperatures {
   font-size: 12px;
@@ -87,9 +86,7 @@ h3 {
 p {
   font-size: 14px;
 }
-p .small {
-  text-align: center;
-}
+
 form {
   display: inline;
   font-size: 12px;
@@ -104,4 +101,7 @@ button {
   padding: 1px 6px;
   border-width: 2px;
   border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+}
+.footer {
+  text-align: center;
 }
