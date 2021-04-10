@@ -33,7 +33,8 @@ let now = new Date();
 
       dateElement.innerHTML = `${day} ${month} ${date} ${year}, ${hours}:${minutes}`;
 
-    function displayForecast() {
+    function displayForecast(response) {
+      console.log(response.data.daily);
   let forecastElement =document.querySelector("#weather-forecast");
 let days =["Thu", "Fri", "Sat", "Sun"];
   let forecastHTML = `<div class="row">`;
@@ -56,6 +57,14 @@ let days =["Thu", "Fri", "Sat", "Sun"];
   });
 forecastHTML=forecastHTML + `</div>`;
 forecastElement.innerHTML = forecastHTML;
+
+}
+function getForecast(coordinates) {
+  console.log(coordinates);
+  let apiKey = "2aab278b1613f8cd861593e4ae3bb315";
+  let apiUrl =`https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+console.log(apiUrl);
+axios.get(apiUrl).then(displayForecast);
 }
     
     function showWeatherCondition (response) {
@@ -68,6 +77,8 @@ forecastElement.innerHTML = forecastHTML;
     document.querySelector("#main-icon").setAttribute("alt", response.data.weather[0].main);
 
     celciusTemperature =response.data.main.temp;
+
+    getForecast(response.data.coord);
 }
 
 function searchCity (city) {
