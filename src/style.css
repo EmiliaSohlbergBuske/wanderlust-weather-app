@@ -71,11 +71,18 @@ ul {
   text-decoration: none;
 }
 
-.forecast {
-  border: 1px solid #7182a0;
-  border-radius: 6px;
-  padding: 8px;
-  font-size: 10px;
+.weather-forecast {
+  font-size: 14px;
+}
+.weather-forecast-temperatures {
+  font-size: 12px;
+}
+.weather-forecast-temperatures-max {
+  font-weight: 900;
+}
+.weather-forecast-temperatures-min {
+  font-weight: lighter;
+  opacity: 0.6;
 }
 
 h3 {
