@@ -10,7 +10,7 @@
     #e3eeff 100%
   );
   color: #7182a0;
-  width: 75%;
+  width: 85%;
   margin: 0 auto;
   padding: 30px;
   border: 1px solid #c6d2e6;
@@ -38,17 +38,19 @@ p.date {
 .mainIcon {
   width: 75%;
   display: inline;
-  padding: 20px;
-  border: 1px solid #7182a0;
+  padding: 30px;
+  border: 2px solid #ea97ad57;
   border-radius: 50px;
   position: relative;
-  right: -30px;
+  left: 30px;
 }
 
 ul {
   list-style: none;
-  font-size: 10px;
+  font-size: 12px;
+  text-align: left;
   position: relative;
+  right: 30px;
 }
 .temperature {
   font-size: 25px;
@@ -63,7 +65,10 @@ ul {
   text-decoration: none;
 }
 .weather-forecast {
-  font-size: 14px;
+  font-size: 12px;
+  border: 2px solid #ea97ad57;
+  border-radius: 8px;
+  padding: 20px;
 }
 .weather-forecast-temperatures {
   font-size: 12px;
