@@ -37,8 +37,9 @@ h3,
 .mainIcon {
   display: inline;
   padding: 10px;
-  border: 2px solid #ea97ad57;
+  border: 3px solid #ea97ad57;
   border-radius: 50px;
+  box-shadow: 2px 5px 5px rgb(0 0 0 / 10%);
   max-width: 110px;
 }
 
@@ -64,8 +65,9 @@ ul {
 }
 .weather-forecast {
   font-size: 12px;
-  border: 2px solid #ea97ad57;
+  border: 3px solid #ea97ad57;
   border-radius: 8px;
+  box-shadow: 2px 5px 5px rgb(0 0 0 / 5%);
   padding: 20px;
   text-align: center;
 }
